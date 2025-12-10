@@ -19,7 +19,6 @@ This project is a simple Python sensor simulator for the Rideau Canal Skateway. 
 ## Installation
 1. Clone the repository.
 2. Open a terminal in the project folder.
-3. (Optional) Create and activate a virtual environment.
 4. Install dependencies: `pip install -r requirements.txt`
 
 ## Configuration
@@ -53,7 +52,7 @@ Key pieces:
 - Telemetry generation: creates fake data for ice thickness, surface temperature, snow, and external temperature.
 - Send loop: every 10 seconds, sends one JSON message per location to the IoT Hub.
 
-Representative functions (names may vary):
+Representative functions:
 - `create_clients()`: sets up IoT Hub clients for each device.
 - `generate_telemetry(meta)`: returns a dictionary with random values for one location.
 - `main()`: runs the infinite loop that sends messages and prints them.
